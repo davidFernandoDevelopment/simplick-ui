@@ -1,0 +1,29 @@
+@charset 'utf-8';
+
+// SETTINGS: Variables globales.
+@forward './src/settings';
+
+//  SETTINGS: Variables de tema (colores y tipografía).
+@forward './src/theme';
+
+// TOOLS: Mixins y Funciones
+@forward './src/tools/index';
+
+// GENERICS: Inicialización de variables y estilos de reset.
+@forward './src/generics';
+
+// TAGS: Estilos globales para las etiquetas.
+@forward './src/tags';
+
+// KEYFRAMES: Animaciones
+@forward './src/keyframes';
+
+// OBJECTS: Bloques reutilizables en componentes u otros componentes de UI.
+@forward "./src/objects";
+
+// COMPONENTS: Bloques de UI reutilizables.
+@forward "./src/components";
+
+// UTILITIES: Sobreescriben las demas clases.
+// @forward "./src/utilities";
+

@@ -2,9 +2,10 @@
   "name": "simplick-ui",
   "version": "1.0.0",
   "description": "Styles of implementation with the BEMIT methodology.",
-  "main": "index.js",
+  "main": "main.css",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "sass -w .",
+    "sass:doc": "sassdoc src"
   },
   "repository": {
     "type": "git",
@@ -22,5 +23,11 @@
   "bugs": {
     "url": "https://github.com/davidFernandoDevelopment/simplick-ui/issues"
   },
-  "homepage": "https://github.com/davidFernandoDevelopment/simplick-ui#readme"
+  "homepage": "https://github.com/davidFernandoDevelopment/simplick-ui#readme",
+  "dependencies": {
+    "sass": "^1.54.0"
+  },
+  "devDependencies": {
+    "sassdoc": "^2.7.4"
+  }
 }
