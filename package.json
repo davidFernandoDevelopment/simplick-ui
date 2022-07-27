@@ -2,15 +2,18 @@
   "name": "simplick-ui",
   "version": "1.0.0",
   "description": "Styles of implementation with the BEMIT methodology.",
-  "main": "main.css",
+  "main": "src/main.css",
   "scripts": {
-    "sass": "sass -w .",
+    "sass": "sass -w src",
     "sass:doc": "sassdoc src"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/davidFernandoDevelopment/simplick-ui.git"
   },
+  "files": [
+    "src"
+  ],
   "keywords": [
     "sass",
     "dark-sass",
@@ -28,6 +31,15 @@
     "sass": "^1.54.0"
   },
   "devDependencies": {
-    "sassdoc": "^2.7.4"
-  }
+    "sassdoc": "^2.7.4",
+    "semantic-release": "^19.0.3"
+  },
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    "@semantic-release/changelog",
+    "@semantic-release/github",
+    "@semantic-release/npm",
+    "@semantic-release/git"
+  ]
 }
