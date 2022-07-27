@@ -1,3 +1,5 @@
+@use '../tools' as *;
+
 $alias-display: (
   d: display,
 );
@@ -28,6 +30,6 @@ $display-properties: (
   ),
 );
 
-// $display-total: fn-add-base-properties($display-properties, $alias-display);
+$display-total: fn-add-base-properties($display-properties, $alias-display);
 
-// @include mx-generator-classes('from', ($display-total, '.SUI-u'));
+@include mx-generator-classes('from', ($display-total, '.SUI-u'));
